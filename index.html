@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Redações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto de Redações</h1>
+        <p>14 textos organizados de forma clara e futurista</p>
+    </header>
+
+    <main>
+        <section class="grid">
+            <!-- 14 cards serão colocados futuramente -->
+            <!-- Exemplo de card (será replicado para 14 quando você mandar as redações) -->
+            <div class="card" onclick="abrirRedacao(1)">
+                <h2>Redação 1</h2>
+                <p>Clique para visualizar</p>
+            </div>
+
+            <!-- Repito 14 cards provisórios -->
+            <div class="card" onclick="abrirRedacao(2)"><h2>Redação 2</h2><p>Clique para visualizar</p></div>
+            <div class="card" onclick="abrirRedacao(3)"><h2>Redação 3</h2><p>Clique para visualizar</p></div>
+            <div class="card" onclick="abrirRedacao(4)"><h2>Redação 4</p></div>
+            <div class="card" onclick="abrirRedacao(5)"><h2>Redação 5</h2></div>
+            <div class="card" onclick="abrirRedacao(6)"><h2>Redação 6</h2></div>
+            <div class="card" onclick="abrirRedacao(7)"><h2>Redação 7</h2></div>
+            <div class="card" onclick="abrirRedacao(8)"><h2>Redação 8</h2></div>
+            <div class="card" onclick="abrirRedacao(9)"><h2>Redação 9</h2></div>
+            <div class="card" onclick="abrirRedacao(10)"><h2>Redação 10</h2></div>
+            <div class="card" onclick="abrirRedacao(11)"><h2>Redação 11</h2></div>
+            <div class="card" onclick="abrirRedacao(12)"><h2>Redação 12</h2></div>
+            <div class="card" onclick="abrirRedacao(13)"><h2>Redação 13</h2></div>
+            <div class="card" onclick="abrirRedacao(14)"><h2>Redação 14</h2></div>
+        </section>
+    </main>
+
+    <!-- Modal futurista -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2 id="tituloRedacao"></h2>
+            <p id="textoRedacao"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
